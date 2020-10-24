@@ -67,3 +67,12 @@ if (hacker1 > hacker2) {
 } else {
   console.log('What?! You both have the same name');
 }
+
+// or could do it this way too?
+if (hacker1.localeCompare(hacker2) === -1) {
+  console.log("The driver's name goes first");
+} else if (hacker1.localeCompare(hacker2) === 1) {
+  console.log("The navigator's name goes first");
+} else {
+  console.log('What?! You both have the same name');
+}
